@@ -42,7 +42,7 @@ function UUID7.as_table(timestamp, seed)
     r8,
 
     -- 9th byte: random mask with variant
-    0x80 | (r9 & 0x3f),
+    0x80 | (r9 & VARIANT_RFC4122),
 
     -- 10th byte: random
     r10,

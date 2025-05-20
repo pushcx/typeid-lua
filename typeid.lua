@@ -1,5 +1,4 @@
 local Base32 = require("base32")
-local millitime = require("millitime")
 local UUID7 = require("uuid7")
 
 local TypeID = {}
@@ -95,7 +94,8 @@ function TypeID.from_uuid_string(prefix, uuid_str)
   local uuid_bytes = {}
 
   -- parse groups from UUID string like "01893726-efee-7f02-8fbf-9f2b7bc2f910"
-  local g1, g2, g3, g4, g5 = uuid_str:match("(%x%x%x%x%x%x%x%x)%-(%x%x%x%x)%-(%x%x%x%x)%-(%x%x%x%x)%-(%x%x%x%x%x%x%x%x%x%x%x%x)")
+  local uuid_template = "(%x%x%x%x%x%x%x%x)%-(%x%x%x%x)%-(%x%x%x%x)%-(%x%x%x%x)%-(%x%x%x%x%x%x%x%x%x%x%x%x)"
+  local g1, g2, g3, g4, g5 = uuid_str:match(uuid_template)
 
   if not g1 then
     error("invalid UUID format")
