@@ -1,6 +1,8 @@
 
 # TypeID in Lua
 
+https://luarocks.org/modules/pushcx/typeid
+
 This is an implementation of [TypeID](https://github.com/jetify-com/typeid) [0.3.0](https://github.com/jetify-com/typeid/tree/main/spec) in Lua.
 
 There's some C to get a timestamp in milliseconds, which is required to generate a [UUID7](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_7_\(timestamp_and_random\)).
