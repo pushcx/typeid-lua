@@ -6,7 +6,7 @@ source = {
    tag = "v0.1-1"
 }
 description = {
-   summary = "Implementation of TypeID in Lua"
+   summary = "Implementation of TypeID in Lua",
    homepage = "https://github.com/pushcx/typeid-lua",
    license = "Apache 2.0"
 }
