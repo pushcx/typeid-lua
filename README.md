@@ -10,7 +10,7 @@ Lua's `os.time()` gives timestamps in seconds, presumably for maximum portabilit
 Hopefully this is reasonably portable, but if not it's short enough to be reasonably replaced.
 
 **Maturity**: this was a toy project for me to practice Lua.
-It works and has reasonable tests, including passing the TypeID suite.
+It works and has good tests, including passing the TypeID suite.
 It's probably not idiomatic Lua.
 
 I've written up some notes on the implementation and alternatives in the [announcement blog post](https://push.cx/typeid-in-lua).
